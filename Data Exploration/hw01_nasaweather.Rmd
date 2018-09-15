@@ -8,7 +8,7 @@ output: github_document
 
 ## R Markdown
 
-/* Install the nasaweather package firstly*/
+Install the nasaweather package firstly
 ```{r cars}
 library(nasaweather)
 ```
@@ -16,7 +16,7 @@ library(nasaweather)
 ## Data set: Storm
 
 Information of data set storms of package nasaweather
-```{r pressure, echo=FALSE}
+```{r}
 str(storms)
 
 head(storms)
