@@ -2,7 +2,7 @@
 title: "hw01_nasaweather"
 author: "Chenchen Guo"
 date: "2018 Sep 15th"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
+/* Install the nasaweather package firstly*/
 ```{r cars}
 library(nasaweather)
 ```
@@ -22,10 +22,31 @@ library(nasaweather)
 ## Including Plots
 
 You can also embed plots, for example:
-
+/* Information of data set storms of package nasaweather*/
 ```{r pressure, echo=FALSE}
-head(storms)
 str(storms)
+
+head(storms)
+
+ncol(storms)
+nrow(storms)
+
+summary(storms)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+/* Calculating the variance with one method and var function  of  pressure which belongs to storm data set*/
+```{r}
+na_pres<- storms$pressure
+length(na_pres)
+max(na_pres)
+min(na_pres)
+
+ave<- (sum(na_pres)/(length(na_pres)))
+diffs<- (na_pres-ave)
+variance<- (sum(diffs^2)/(length(na_pres)-1))
+variance
+
+var(na_pres)
+```
+
