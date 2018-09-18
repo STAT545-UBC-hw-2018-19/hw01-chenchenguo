@@ -3,6 +3,8 @@
   ### Where are we?
   This repository of this readme file is \`*STAT545-UBC-students/hw01-chenchenguo*\`
     \[[Repository](https://github.com/STAT545-UBC-students/hw01-chenchenguo)\]
+    
+    Homework 1 is in Data Exploration file
   
   ### Introduction 
   **Chenchen GUO**, *MENG* Student in Electrical and Computering Engineering
