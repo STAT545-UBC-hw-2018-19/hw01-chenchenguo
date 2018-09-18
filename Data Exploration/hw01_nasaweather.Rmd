@@ -10,6 +10,7 @@ output: github_document
 
 Install the nasaweather package firstly
 ```{r cars}
+
 library(nasaweather)
 ```
 
@@ -46,5 +47,6 @@ Indicate the length of every storm of each year
 ```{r}
 str(storms)
 plot(storms$year,storms$day)
+plot(storms$year,storms$hour)
 ```
 

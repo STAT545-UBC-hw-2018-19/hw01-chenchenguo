@@ -157,3 +157,9 @@ plot(storms$year,storms$day)
 ```
 
 ![](hw01_nasaweather_files/figure-markdown_github/unnamed-chunk-3-1.png)
+
+``` r
+plot(storms$year,storms$hour)
+```
+
+![](hw01_nasaweather_files/figure-markdown_github/unnamed-chunk-3-2.png)
